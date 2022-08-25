@@ -1,0 +1,54 @@
+﻿@model Course_project.DAL.Models.Driver
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div style="padding: 30px;"></div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.wallpaperscraft.ru/image/abstraktsiia_raznotsvetnyj_iarkij_141923_1920x1080.jpg" class="card-img card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <nav class="nav nav-pills flex-column flex-sm-row">
+          <a class="flex-sm-fill text-sm-center nav-link text-center" asp-controller="Login" asp-action="Register">Создать юзера</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.wallpaperscraft.ru/image/abstraktsiya_forma_ostrie_figurka_101902_1920x1080.jpg" class="card-img card-img-top" alt="">
+      <div class="card-body">
+          <p>@Model.FirstName</p>
+          <p>@Model.SecondName</p>
+      </div>
+      <div class="card-footer">
+          adasdas
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.wallpaperscraft.ru/image/abstraktsiia_raznotsvetnyj_svechenie_142211_1920x1080.jpg" class="card-img card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <nav class="nav nav-pills flex-column flex-sm-row">
+          <a class="flex-sm-fill text-sm-center nav-link text-center" asp-controller="Account" asp-action="GetUser">Посмотреть юзера</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card {
+    background-color: deepskyblue;
+  }
+</style>

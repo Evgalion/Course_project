@@ -1,0 +1,725 @@
+2022-08-23 23:18:03.6634|Course_project.Program|DEBUG|init main 
+2022-08-23 23:18:05.0286|Microsoft.Extensions.Hosting.Internal.Host|DEBUG|Hosting starting 
+2022-08-23 23:18:05.1061|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|INFO|User profile is available. Using 'C:\Users\katiy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2022-08-23 23:18:05.1154|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|DEBUG|Reading data from file 'C:\Users\katiy\AppData\Local\ASP.NET\DataProtection-Keys\key-e6223948-3c1b-456e-b30d-1956394c278e.xml'. 
+2022-08-23 23:18:05.1311|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|DEBUG|Found key {e6223948-3c1b-456e-b30d-1956394c278e}. 
+2022-08-23 23:18:05.1311|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|DEBUG|Considering key {e6223948-3c1b-456e-b30d-1956394c278e} with expiration date 2022-10-27 12:44:34Z as default key. 
+2022-08-23 23:18:05.2098|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|DEBUG|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-08-23 23:18:05.2098|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|DEBUG|Decrypting secret element using Windows DPAPI. 
+2022-08-23 23:18:05.2098|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|DEBUG|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-08-23 23:18:05.2098|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|DEBUG|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2022-08-23 23:18:05.2098|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|DEBUG|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2022-08-23 23:18:05.2098|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|DEBUG|Using key {e6223948-3c1b-456e-b30d-1956394c278e} as the default key. 
+2022-08-23 23:18:05.2098|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|DEBUG|Key ring with default key {e6223948-3c1b-456e-b30d-1956394c278e} was loaded during application startup. 
+2022-08-23 23:18:05.8416|Microsoft.AspNetCore.Hosting.Diagnostics|DEBUG|Loaded hosting startup assembly Course_project 
+2022-08-23 23:18:05.8416|Microsoft.AspNetCore.Hosting.Diagnostics|DEBUG|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2022-08-23 23:18:05.8416|Microsoft.AspNetCore.Hosting.Diagnostics|DEBUG|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2022-08-23 23:18:05.8416|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2022-08-23 23:18:05.8416|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2022-08-23 23:18:05.8416|Microsoft.Hosting.Lifetime|INFO|Content root path: G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project 
+2022-08-23 23:18:05.8416|Microsoft.Extensions.Hosting.Internal.Host|DEBUG|Hosting started 
+2022-08-23 23:18:05.8860|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/ - - 
+2022-08-23 23:18:05.9167|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|DEBUG|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-23 23:18:05.9167|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:18:05.9167|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path / does not match a supported file type 
+2022-08-23 23:18:05.9375|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|1 candidate(s) found for the request path '/' 
+2022-08-23 23:18:05.9375|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|Endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-08-23 23:18:05.9375|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request matched endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:18:05.9375|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:18:05.9438|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|DEBUG|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-23 23:18:05.9711|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Course_project.Controllers.HomeController (Course_project). 
+2022-08-23 23:18:05.9711|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of authorization filters (in the following order): None 
+2022-08-23 23:18:05.9711|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:18:05.9711|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-08-23 23:18:05.9711|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of exception filters (in the following order): None 
+2022-08-23 23:18:05.9711|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:18:05.9711|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:18:05.9711|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:18:05.9711|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executing controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executed controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method Course_project.Controllers.HomeController.Index (Course_project) - Validation state: Valid 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method Course_project.Controllers.HomeController.Index (Course_project), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2729ms. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache miss for view 'Index' in controller 'Home'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Located compiled view for view at path '/Views/Home/Index.cshtml'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Could not find a file for view at path '/Views/Home/_ViewStart.cshtml'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2022-08-23 23:18:05.9732|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2022-08-23 23:18:05.9912|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2022-08-23 23:18:05.9912|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|DEBUG|The view path '/Views/Home/Index.cshtml' was found in 5.7019ms. 
+2022-08-23 23:18:06.0467|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:18:06.0532|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Login/Register and  
+2022-08-23 23:18:06.0532|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Login/Register 
+2022-08-23 23:18:06.0532|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:18:06.0532|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/GetUser and  
+2022-08-23 23:18:06.0532|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/GetUser 
+2022-08-23 23:18:06.0532|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache miss for view '_Layout' in controller 'Home'. 
+2022-08-23 23:18:06.0532|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Could not find a file for view at path '/Views/Home/_Layout.cshtml'. 
+2022-08-23 23:18:06.0532|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2022-08-23 23:18:06.0717|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:18:06.0717|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:18:06.0717|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:18:06.0717|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:18:06.0717|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:18:06.0717|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:18:06.0717|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:18:06.0717|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2022-08-23 23:18:06.0717|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2022-08-23 23:18:06.1724|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 186.8685ms. 
+2022-08-23 23:18:06.1724|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:18:06.1724|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:18:06.1724|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:18:06.1724|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:18:06.1724|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:18:06.1724|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action Course_project.Controllers.HomeController.Index (Course_project) in 202.8198ms 
+2022-08-23 23:18:06.1724|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:18:06.1885|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup is scheduled to include browser refresh script injection. 
+2022-08-23 23:18:06.2008|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup was updated to include browser refresh script injection. 
+2022-08-23 23:18:06.2008|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571306091282433" disconnecting. 
+2022-08-23 23:18:06.2008|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/ - - - 200 - text/html;+charset=utf-8 319.4498ms 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css - - 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/site.css - - 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 2.6682ms 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18014398523977498625" disconnecting. 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/site.css was not modified 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|Handled. Status code: 304 File: /css/site.css 
+2022-08-23 23:18:06.2348|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/site.css - - - 304 - text/css 3.6206ms 
+2022-08-23 23:18:06.2390|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:18:06.2390|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified 
+2022-08-23 23:18:06.2390|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|Handled. Status code: 304 File: /lib/bootstrap/dist/css/bootstrap.min.css 
+2022-08-23 23:18:06.2390|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 4.2345ms 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/jquery/dist/jquery.min.js - - 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 0.7749ms 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/js/site.js'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\js\site.js' 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 0.9740ms 
+2022-08-23 23:18:06.2750|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571314681217027" disconnecting. 
+2022-08-23 23:18:06.2860|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-23 23:18:06.2860|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628904424177667" disconnecting. 
+2022-08-23 23:18:06.2860|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 2.0713ms 
+2022-08-23 23:18:06.3137|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js' 
+2022-08-23 23:18:06.3137|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18374686481282236428" disconnecting. 
+2022-08-23 23:18:06.3137|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78641 application/javascript 40.3983ms 
+2022-08-23 23:18:06.3190|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\jquery\dist\jquery.min.js' 
+2022-08-23 23:18:06.3190|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18158513720643289089" disconnecting. 
+2022-08-23 23:18:06.3190|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 46.6322ms 
+2022-08-23 23:18:06.3190|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - - 
+2022-08-23 23:18:06.3876|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628895834243073" disconnecting. 
+2022-08-23 23:18:06.3876|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.1395ms 
+2022-08-23 23:18:06.6072|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/favicon.ico - - 
+2022-08-23 23:18:06.6072|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:18:06.6072|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:18:06.6164|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\favicon.ico' 
+2022-08-23 23:18:06.6164|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/favicon.ico - - - 200 5430 image/x-icon 9.3139ms 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 0.4831ms 
+2022-08-23 23:19:53.5773|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 0.5171ms 
+2022-08-23 23:19:53.7377|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - 
+2022-08-23 23:19:53.7377|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:19:53.7377|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:19:53.7619|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+2022-08-23 23:19:53.7619|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:19:53.7619|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:19:53.7619|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map' 
+2022-08-23 23:19:53.7733|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18086456126605361158" disconnecting. 
+2022-08-23 23:19:53.7733|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 35.7971ms 
+2022-08-23 23:19:53.7873|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+2022-08-23 23:19:53.8031|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18014398532567433218" disconnecting. 
+2022-08-23 23:19:53.8031|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 41.4334ms 
+2022-08-23 23:20:25.2352|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+2022-08-23 23:20:25.2352|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:25.2352|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:20:25.2352|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+2022-08-23 23:20:25.2395|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - 
+2022-08-23 23:20:25.2395|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:25.2395|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:20:25.2395|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map' 
+2022-08-23 23:20:25.2395|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628904424177673" disconnecting. 
+2022-08-23 23:20:25.2395|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 10.7323ms 
+2022-08-23 23:20:25.2395|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571314681217031" disconnecting. 
+2022-08-23 23:20:25.2395|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 18.1700ms 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/ - - 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path / does not match a supported file type 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|1 candidate(s) found for the request path '/' 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|Endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request matched endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Course_project.Controllers.HomeController (Course_project). 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of authorization filters (in the following order): None 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of exception filters (in the following order): None 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executing controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executed controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method Course_project.Controllers.HomeController.Index (Course_project) - Validation state: Valid 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method Course_project.Controllers.HomeController.Index (Course_project), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0306ms. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache hit for view 'Index' in controller 'Home'. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|DEBUG|The view path '/Views/Home/Index.cshtml' was found in 0.1746ms. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Login/Register and  
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Login/Register 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/GetUser and  
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/GetUser 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache hit for view '_Layout' in controller 'Home'. 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2022-08-23 23:20:37.3110|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 4.5698ms. 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action Course_project.Controllers.HomeController.Index (Course_project) in 5.2404ms 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup is scheduled to include browser refresh script injection. 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup was updated to include browser refresh script injection. 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "17942340929939570693" disconnecting. 
+2022-08-23 23:20:37.3175|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/ - - - 200 - text/html;+charset=utf-8 7.9769ms 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 0.3665ms 
+2022-08-23 23:20:37.3656|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 0.2998ms 
+2022-08-23 23:20:37.3804|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-23 23:20:37.3804|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628891539275784" disconnecting. 
+2022-08-23 23:20:37.3804|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 1.4817ms 
+2022-08-23 23:20:37.3804|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - - 
+2022-08-23 23:20:37.4052|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628891539275786" disconnecting. 
+2022-08-23 23:20:37.4052|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.6768ms 
+2022-08-23 23:20:37.4316|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+2022-08-23 23:20:37.4316|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:37.4316|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:20:37.4316|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+2022-08-23 23:20:37.4517|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18158513699168452609" disconnecting. 
+2022-08-23 23:20:37.4517|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 20.2089ms 
+2022-08-23 23:20:37.4866|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - 
+2022-08-23 23:20:37.4866|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:37.4866|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:20:37.4912|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map' 
+2022-08-23 23:20:37.4912|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628904424177675" disconnecting. 
+2022-08-23 23:20:37.4912|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 15.1782ms 
+2022-08-23 23:20:39.9826|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/Login/Register - - 
+2022-08-23 23:20:39.9826|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:39.9826|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /Login/Register does not match a supported file type 
+2022-08-23 23:20:39.9826|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/Login/Register' 
+2022-08-23 23:20:39.9826|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:20:39.9826|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/Login/Register - - - 404 - - 1.0401ms 
+2022-08-23 23:20:42.4262|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-23 23:20:42.4262|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571314681217033" disconnecting. 
+2022-08-23 23:20:42.4262|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 1.7572ms 
+2022-08-23 23:20:42.5367|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+2022-08-23 23:20:42.5367|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:42.5367|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:20:42.5367|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+2022-08-23 23:20:42.5606|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571310386249729" disconnecting. 
+2022-08-23 23:20:42.5606|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 23.9548ms 
+2022-08-23 23:20:42.5844|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - 
+2022-08-23 23:20:42.5844|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:42.5844|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:20:42.5990|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map' 
+2022-08-23 23:20:42.5990|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571306091282439" disconnecting. 
+2022-08-23 23:20:42.5990|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 25.8411ms 
+2022-08-23 23:20:43.7983|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/Account/GetUser - - 
+2022-08-23 23:20:43.7983|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:43.7983|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /Account/GetUser does not match a supported file type 
+2022-08-23 23:20:43.7983|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/Account/GetUser' 
+2022-08-23 23:20:43.7983|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:20:43.7983|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/Account/GetUser - - - 404 - - 1.0080ms 
+2022-08-23 23:20:45.0800|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-23 23:20:45.0800|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571314681217037" disconnecting. 
+2022-08-23 23:20:45.0800|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 1.4473ms 
+2022-08-23 23:20:45.1903|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+2022-08-23 23:20:45.1903|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:45.1903|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:20:45.1925|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+2022-08-23 23:20:45.1925|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "17942340929939570701" disconnecting. 
+2022-08-23 23:20:45.1925|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 16.1267ms 
+2022-08-23 23:20:45.2191|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - 
+2022-08-23 23:20:45.2191|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:45.2191|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:20:45.2239|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map' 
+2022-08-23 23:20:45.2239|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571310386249731" disconnecting. 
+2022-08-23 23:20:45.2239|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 13.8165ms 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/ - - 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path / does not match a supported file type 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|1 candidate(s) found for the request path '/' 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|Endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request matched endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Course_project.Controllers.HomeController (Course_project). 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of authorization filters (in the following order): None 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of exception filters (in the following order): None 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executing controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executed controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method Course_project.Controllers.HomeController.Index (Course_project) - Validation state: Valid 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method Course_project.Controllers.HomeController.Index (Course_project), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0082ms. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache hit for view 'Index' in controller 'Home'. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|DEBUG|The view path '/Views/Home/Index.cshtml' was found in 0.0509ms. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Login/Register and  
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Login/Register 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/GetUser and  
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/GetUser 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache hit for view '_Layout' in controller 'Home'. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 2.4601ms. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action Course_project.Controllers.HomeController.Index (Course_project) in 2.8806ms 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup is scheduled to include browser refresh script injection. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup was updated to include browser refresh script injection. 
+2022-08-23 23:20:46.8063|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/ - - - 200 - text/html;+charset=utf-8 4.6877ms 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 0.2747ms 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 0.3384ms 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - - 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571314681217039" disconnecting. 
+2022-08-23 23:20:46.8485|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 0.8581ms 
+2022-08-23 23:20:46.8855|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571310386249733" disconnecting. 
+2022-08-23 23:20:46.8855|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.1624ms 
+2022-08-23 23:20:46.9140|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+2022-08-23 23:20:46.9140|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:46.9140|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:20:46.9140|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+2022-08-23 23:20:46.9350|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571310386249735" disconnecting. 
+2022-08-23 23:20:46.9350|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 21.1332ms 
+2022-08-23 23:20:46.9350|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - 
+2022-08-23 23:20:46.9350|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:20:46.9350|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:20:46.9448|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map' 
+2022-08-23 23:20:46.9448|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "17942340929939570705" disconnecting. 
+2022-08-23 23:20:46.9448|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 13.2928ms 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 0.4223ms 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "17870283335901642753" disconnecting. 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 0.5666ms 
+2022-08-23 23:24:07.4944|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18014398523977498627" disconnecting. 
+2022-08-23 23:24:07.5126|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - 
+2022-08-23 23:24:07.5126|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:07.5126|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:24:07.5126|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map' 
+2022-08-23 23:24:07.5232|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628891539275794" disconnecting. 
+2022-08-23 23:24:07.5232|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 10.6508ms 
+2022-08-23 23:24:07.5409|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+2022-08-23 23:24:07.5409|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:07.5409|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:24:07.5409|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+2022-08-23 23:24:07.5573|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628891539275796" disconnecting. 
+2022-08-23 23:24:07.5573|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 16.4882ms 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/ - - 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path / does not match a supported file type 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|1 candidate(s) found for the request path '/' 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|Endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request matched endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Course_project.Controllers.HomeController (Course_project). 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of authorization filters (in the following order): None 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of exception filters (in the following order): None 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executing controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executed controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method Course_project.Controllers.HomeController.Index (Course_project) - Validation state: Valid 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method Course_project.Controllers.HomeController.Index (Course_project), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0092ms. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache hit for view 'Index' in controller 'Home'. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|DEBUG|The view path '/Views/Home/Index.cshtml' was found in 0.0642ms. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Login/Register and  
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Login/Register 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/GetUser and  
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/GetUser 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache hit for view '_Layout' in controller 'Home'. 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2022-08-23 23:24:21.8610|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 2.4972ms. 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action Course_project.Controllers.HomeController.Index (Course_project) in 2.8833ms 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup is scheduled to include browser refresh script injection. 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup was updated to include browser refresh script injection. 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/ - - - 200 - text/html;+charset=utf-8 4.7066ms 
+2022-08-23 23:24:21.8646|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18014398523977498629" disconnecting. 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 0.5010ms 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:24:21.9054|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 1.6049ms 
+2022-08-23 23:24:21.9227|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - - 
+2022-08-23 23:24:21.9227|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-23 23:24:21.9227|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18374686489872171015" disconnecting. 
+2022-08-23 23:24:21.9227|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 1.7082ms 
+2022-08-23 23:24:21.9466|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18158513707758387205" disconnecting. 
+2022-08-23 23:24:21.9466|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.9601ms 
+2022-08-23 23:24:22.0058|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+2022-08-23 23:24:22.0058|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:22.0058|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:24:22.0058|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+2022-08-23 23:24:22.0269|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18158513720643289098" disconnecting. 
+2022-08-23 23:24:22.0269|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - 
+2022-08-23 23:24:22.0269|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:22.0269|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:24:22.0269|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 22.5424ms 
+2022-08-23 23:24:22.0269|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map' 
+2022-08-23 23:24:22.0388|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628904424177682" disconnecting. 
+2022-08-23 23:24:22.0388|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 11.0939ms 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/ - - 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path / does not match a supported file type 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|1 candidate(s) found for the request path '/' 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|Endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request matched endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Course_project.Controllers.HomeController (Course_project). 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of authorization filters (in the following order): None 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of exception filters (in the following order): None 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executing controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executed controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method Course_project.Controllers.HomeController.Index (Course_project) - Validation state: Valid 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method Course_project.Controllers.HomeController.Index (Course_project), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.007ms. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache hit for view 'Index' in controller 'Home'. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|DEBUG|The view path '/Views/Home/Index.cshtml' was found in 0.0396ms. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Login/Register and  
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Login/Register 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/GetUser and  
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/GetUser 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache hit for view '_Layout' in controller 'Home'. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 2.0227ms. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action Course_project.Controllers.HomeController.Index (Course_project) in 2.4102ms 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup is scheduled to include browser refresh script injection. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup was updated to include browser refresh script injection. 
+2022-08-23 23:24:51.0281|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/ - - - 200 - text/html;+charset=utf-8 3.9919ms 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 0.3259ms 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - - 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 0.2360ms 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628887244308502" disconnecting. 
+2022-08-23 23:24:51.0900|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 3.9068ms 
+2022-08-23 23:24:51.1171|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571293206380561" disconnecting. 
+2022-08-23 23:24:51.1171|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.7172ms 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 0.3688ms 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571293206380563" disconnecting. 
+2022-08-23 23:27:45.7114|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 0.4130ms 
+2022-08-23 23:27:45.8474|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - 
+2022-08-23 23:27:45.8474|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:27:45.8474|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:27:45.8504|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map' 
+2022-08-23 23:27:45.8504|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571306091282448" disconnecting. 
+2022-08-23 23:27:45.8504|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 11.2190ms 
+2022-08-23 23:27:45.8689|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+2022-08-23 23:27:45.8689|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:27:45.8689|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:27:45.8689|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+2022-08-23 23:27:45.8842|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571293206380565" disconnecting. 
+2022-08-23 23:27:45.8842|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 15.4150ms 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/ - - 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path / does not match a supported file type 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|1 candidate(s) found for the request path '/' 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|Endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request matched endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Course_project.Controllers.HomeController (Course_project). 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of authorization filters (in the following order): None 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of exception filters (in the following order): None 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executing controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executed controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method Course_project.Controllers.HomeController.Index (Course_project) - Validation state: Valid 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method Course_project.Controllers.HomeController.Index (Course_project), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0093ms. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache hit for view 'Index' in controller 'Home'. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|DEBUG|The view path '/Views/Home/Index.cshtml' was found in 0.1435ms. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Login/Register and  
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Login/Register 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/GetUser and  
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/GetUser 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache hit for view '_Layout' in controller 'Home'. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 2.6245ms. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action Course_project.Controllers.HomeController.Index (Course_project) in 3.0073ms 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup is scheduled to include browser refresh script injection. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup was updated to include browser refresh script injection. 
+2022-08-23 23:28:17.5102|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/ - - - 200 - text/html;+charset=utf-8 4.7049ms 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 0.4755ms 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 0.2109ms 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - - 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571293206380569" disconnecting. 
+2022-08-23 23:28:17.5674|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 0.6196ms 
+2022-08-23 23:28:17.5968|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571310386249747" disconnecting. 
+2022-08-23 23:28:17.5968|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.4606ms 
+2022-08-23 23:28:17.6418|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+2022-08-23 23:28:17.6418|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:28:17.6418|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:28:17.6418|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+2022-08-23 23:28:17.6605|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571306091282450" disconnecting. 
+2022-08-23 23:28:17.6605|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 18.8937ms 
+2022-08-23 23:28:17.6605|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - 
+2022-08-23 23:28:17.6605|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:28:17.6605|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-23 23:28:17.6605|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map' 
+2022-08-23 23:28:17.6799|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18158513703463419909" disconnecting. 
+2022-08-23 23:28:17.6799|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 10.3740ms 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 0.7031ms 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 0.7730ms 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - - 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571314681217051" disconnecting. 
+2022-08-23 23:49:43.9990|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 2.3220ms 
+2022-08-23 23:49:44.0262|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "17942340929939570711" disconnecting. 
+2022-08-23 23:49:44.0262|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.3299ms 
