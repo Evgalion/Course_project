@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace Course_project.DAL.Models
-{
+namespace Course_project.Domain.Models
+{ 
     public partial class Driver
     {
         public Driver()

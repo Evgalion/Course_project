@@ -1239,6 +1239,21 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "Course_project.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Course_project.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
+        },
+        "compile": {
+          "bin/placeholder/Course_project.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Course_project.DAL.dll": {}
+        }
+      },
       "Course_project.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -4407,6 +4422,11 @@
         "version.txt"
       ]
     },
+    "Course_project.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Course_project.Domain/Course_project.DAL.csproj",
+      "msbuildProject": "../Course_project.Domain/Course_project.DAL.csproj"
+    },
     "Course_project.Domain/1.0.0": {
       "type": "project",
       "path": "../Course_project.DAL/Course_project.Domain.csproj",
@@ -4415,6 +4435,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Course_project.DAL >= 1.0.0",
       "Course_project.Domain >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.17",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
@@ -4455,6 +4476,9 @@
           "projectReferences": {
             "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.DAL\\Course_project.Domain.csproj": {
               "projectPath": "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.DAL\\Course_project.Domain.csproj"
+            },
+            "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.Domain\\Course_project.DAL.csproj": {
+              "projectPath": "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.Domain\\Course_project.DAL.csproj"
             }
           }
         }

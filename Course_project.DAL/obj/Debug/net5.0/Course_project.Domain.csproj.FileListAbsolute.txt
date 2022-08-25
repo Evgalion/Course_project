@@ -1,0 +1,15 @@
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\bin\Debug\net5.0\Course_project.Domain.deps.json
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\bin\Debug\net5.0\Course_project.Domain.runtimeconfig.json
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\bin\Debug\net5.0\Course_project.Domain.runtimeconfig.dev.json
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\bin\Debug\net5.0\Course_project.Domain.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\bin\Debug\net5.0\Course_project.Domain.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\obj\Debug\net5.0\Course_project.Domain.csproj.AssemblyReference.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\obj\Debug\net5.0\Course_project.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\obj\Debug\net5.0\Course_project.Domain.AssemblyInfoInputs.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\obj\Debug\net5.0\Course_project.Domain.AssemblyInfo.cs
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\obj\Debug\net5.0\Course_project.Domain.csproj.CoreCompileInputs.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\obj\Debug\net5.0\Course_project.Domain.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\obj\Debug\net5.0\refint\Course_project.Domain.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\obj\Debug\net5.0\Course_project.Domain.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\obj\Debug\net5.0\Course_project.Domain.genruntimeconfig.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.DAL\obj\Debug\net5.0\ref\Course_project.Domain.dll

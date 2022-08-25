@@ -1,4 +1,4 @@
-﻿using Course_project.DAL.Models;
+﻿using Course_project.Domain.Models;
 using Course_project.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

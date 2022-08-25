@@ -1,0 +1,5 @@
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.csproj.AssemblyReference.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.GeneratedMSBuildEditorConfig.editorconfig
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.AssemblyInfoInputs.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.AssemblyInfo.cs
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.csproj.CoreCompileInputs.cache

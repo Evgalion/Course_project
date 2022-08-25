@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace Course_project.DAL.Enum
+namespace Course_project.Domain.Enum
 {
     public enum TypeofProduct
     {

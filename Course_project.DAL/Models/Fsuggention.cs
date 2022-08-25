@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Course_project.DAL.Enum;
+using Course_project.Domain.Enum;
 
 #nullable disable
 
-namespace Course_project.DAL.Models
+namespace Course_project.Domain.Models
 {
     public partial class Fsuggention
     {

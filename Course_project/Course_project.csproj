@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Course_project.DAL\Course_project.DAL.csproj" />
+    <ProjectReference Include="..\Course_project.DAL\Course_project.Domain.csproj" />
   </ItemGroup>
 
 </Project>
