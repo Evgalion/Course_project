@@ -1,5 +1,6 @@
 ﻿using Course_project.Domain.Models;
 using Course_project.Models;
+using Course_project.DAL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,22 +13,26 @@ namespace Course_project.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IAddressRepository _addressRepository;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IAddressRepository addressRepository)
         {
             _logger = logger;
+            _addressRepository = addressRepository;
         }
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            Driver d1 = new Driver()
-            {
-                FirstName = "Sergey",
-                SecondName = "Hoog"
+            var response = await _addressRepository.GetAll();
+
+            //Driver d1 = new Driver()
+            //{
+            //    FirstName = "Sergey",
+            //    SecondName = "Hoog"
                 
-            };
-            return View(d1);
+            //};
+            return View();
         }
 
         public IActionResult Privacy()

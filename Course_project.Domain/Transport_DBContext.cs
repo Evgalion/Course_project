@@ -370,7 +370,6 @@ namespace Course_project.DAL
                     .HasConstraintName("fsuggention_staff_id_fkey");
             });
 
-
             modelBuilder.Entity<Pcontract>(entity =>
             {
                 entity.ToTable("pcontract");

@@ -10,6 +10,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Course_project.DAL;
 using Microsoft.EntityFrameworkCore;
+using Course_project.DAL.Interfaces;
+using Course_project.DAL.Repositories;
 
 namespace Course_project
 {
@@ -30,6 +32,8 @@ namespace Course_project
             var connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<Transport_DBContext>(options =>
                 options.UseNpgsql(connection));
+
+            services.AddScoped<IAddressRepository, AddressRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
