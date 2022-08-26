@@ -3,3 +3,13 @@ G:\Учёба\3 курс - 2 семестр\Проектирование_инф�
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.AssemblyInfoInputs.cache
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.AssemblyInfo.cs
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.csproj.CoreCompileInputs.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\bin\Debug\net5.0\Course_project.DAL.deps.json
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\bin\Debug\net5.0\Course_project.DAL.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\bin\Debug\net5.0\Course_project.DAL.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\bin\Debug\net5.0\Course_project.Domain.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\bin\Debug\net5.0\Course_project.Domain.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.csproj.CopyComplete
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\refint\Course_project.DAL.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\Course_project.DAL.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Domain\obj\Debug\net5.0\ref\Course_project.DAL.dll

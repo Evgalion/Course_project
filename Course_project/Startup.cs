@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Course_project.DAL;
+using Microsoft.EntityFrameworkCore;
 
 namespace Course_project
 {
@@ -24,6 +26,10 @@ namespace Course_project
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            var connection = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<Transport_DBContext>(options =>
+                options.UseNpgsql(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
