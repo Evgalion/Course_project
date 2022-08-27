@@ -12,6 +12,8 @@ using Course_project.DAL;
 using Microsoft.EntityFrameworkCore;
 using Course_project.DAL.Interfaces;
 using Course_project.DAL.Repositories;
+using Course_project.Service.Interfaces;
+using Course_project.Service.Implementations;
 
 namespace Course_project
 {
@@ -34,6 +36,7 @@ namespace Course_project
                 options.UseNpgsql(connection));
 
             services.AddScoped<IAddressRepository, AddressRepository>();
+            services.AddScoped<IAddressService,AddressService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

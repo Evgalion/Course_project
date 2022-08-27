@@ -1266,6 +1266,20 @@
         "runtime": {
           "bin/placeholder/Course_project.Domain.dll": {}
         }
+      },
+      "Course_project.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Course_project.DAL": "1.0.0",
+          "Course_project.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Course_project.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Course_project.Service.dll": {}
+        }
       }
     }
   },
@@ -4431,12 +4445,18 @@
       "type": "project",
       "path": "../Course_project.DAL/Course_project.Domain.csproj",
       "msbuildProject": "../Course_project.DAL/Course_project.Domain.csproj"
+    },
+    "Course_project.Service/1.0.0": {
+      "type": "project",
+      "path": "../Course_project.Service/Course_project.Service.csproj",
+      "msbuildProject": "../Course_project.Service/Course_project.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Course_project.DAL >= 1.0.0",
       "Course_project.Domain >= 1.0.0",
+      "Course_project.Service >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.17",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
@@ -4479,6 +4499,9 @@
             },
             "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.Domain\\Course_project.DAL.csproj": {
               "projectPath": "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.Domain\\Course_project.DAL.csproj"
+            },
+            "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.Service\\Course_project.Service.csproj": {
+              "projectPath": "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.Service\\Course_project.Service.csproj"
             }
           }
         }

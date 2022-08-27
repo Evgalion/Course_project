@@ -796,7 +796,6 @@ G:\Учёба\3 курс - 2 семестр\Проектирование_инф�
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Course_project.AssemblyInfoInputs.cache
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Course_project.AssemblyInfo.cs
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Course_project.csproj.CoreCompileInputs.cache
-G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Course_project.MvcApplicationPartsAssemblyInfo.cs
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Course_project.MvcApplicationPartsAssemblyInfo.cache
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Course_project.RazorAssemblyInfo.cache
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Course_project.RazorAssemblyInfo.cs
@@ -826,3 +825,5 @@ G:\Учёба\3 курс - 2 семестр\Проектирование_инф�
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.Domain.dll
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.Domain.pdb
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Razor\Views\Address\GetAddresses.cshtml.g.cs
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.Service.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.Service.pdb
