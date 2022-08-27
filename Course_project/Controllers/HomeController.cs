@@ -22,16 +22,8 @@ namespace Course_project.Controllers
             _addressRepository = addressRepository;
         }
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var response = await _addressRepository.GetAll();
-
-            //Driver d1 = new Driver()
-            //{
-            //    FirstName = "Sergey",
-            //    SecondName = "Hoog"
-                
-            //};
             return View();
         }
 

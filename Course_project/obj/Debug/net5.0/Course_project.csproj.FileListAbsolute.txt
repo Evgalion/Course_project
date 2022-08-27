@@ -825,3 +825,4 @@ G:\Учёба\3 курс - 2 семестр\Проектирование_инф�
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.DAL.pdb
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.Domain.dll
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.Domain.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Razor\Views\Address\GetAddresses.cshtml.g.cs
