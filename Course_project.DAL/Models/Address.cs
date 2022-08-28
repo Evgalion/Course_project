@@ -23,4 +23,6 @@ namespace Course_project.Domain.Models
         public virtual ICollection<Address> InverseNext { get; set; }
         public virtual ICollection<Waybill> Waybills { get; set; }
     }
+
+   
 }

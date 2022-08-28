@@ -49,6 +49,8 @@ namespace Course_project.DAL
             }
         }
 
+
+        // добавить для полей id свойство ValueGeneratedOnAdd
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasPostgresEnum(null, "gender", new[] { "Женщина", "Мужчина" })
@@ -62,7 +64,9 @@ namespace Course_project.DAL
             {
                 entity.ToTable("address");
 
-                entity.Property(e => e.Id).HasColumnName("id");
+                entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("id");
 
                 entity.Property(e => e.AccurateDestination).HasColumnName("accurate_destination");
 
