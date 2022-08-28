@@ -1,0 +1,17 @@
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\obj\Debug\net5.0\Course_project.Service.csproj.AssemblyReference.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\obj\Debug\net5.0\Course_project.Service.GeneratedMSBuildEditorConfig.editorconfig
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\obj\Debug\net5.0\Course_project.Service.AssemblyInfoInputs.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\obj\Debug\net5.0\Course_project.Service.AssemblyInfo.cs
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\obj\Debug\net5.0\Course_project.Service.csproj.CoreCompileInputs.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\bin\Debug\net5.0\Course_project.Service.deps.json
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\bin\Debug\net5.0\Course_project.Service.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\bin\Debug\net5.0\Course_project.Service.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\bin\Debug\net5.0\Course_project.DAL.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\bin\Debug\net5.0\Course_project.Domain.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\bin\Debug\net5.0\Course_project.Domain.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\bin\Debug\net5.0\Course_project.DAL.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\obj\Debug\net5.0\Course_project.Service.csproj.CopyComplete
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\obj\Debug\net5.0\Course_project.Service.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\obj\Debug\net5.0\refint\Course_project.Service.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\obj\Debug\net5.0\Course_project.Service.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Service\obj\Debug\net5.0\ref\Course_project.Service.dll

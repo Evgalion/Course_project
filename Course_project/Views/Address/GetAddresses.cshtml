@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Course_project.Domain.Models.Address>
+@{
+    ViewData["Title"] = "GetAddresses";
+    Layout = "_Layout";
+}
+
+@foreach (var address in Model)
+{
+    
+    <hr />
+    <div class="col-12">
+    <p>@address.Id</p>
+    <p>@address.MainDestination</p>
+    <p>@address.AccurateDestination</p>
+    <p>@address.NextId</p>
+    </div>
+    <hr />
+}
