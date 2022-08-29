@@ -1,0 +1,270 @@
+2022-08-29 22:59:13.4311|Course_project.Program|DEBUG|init main 
+2022-08-29 22:59:15.4933|Microsoft.Extensions.Hosting.Internal.Host|DEBUG|Hosting starting 
+2022-08-29 22:59:15.5844|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|INFO|User profile is available. Using 'C:\Users\katiy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2022-08-29 22:59:15.5955|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|DEBUG|Reading data from file 'C:\Users\katiy\AppData\Local\ASP.NET\DataProtection-Keys\key-e6223948-3c1b-456e-b30d-1956394c278e.xml'. 
+2022-08-29 22:59:15.6186|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|DEBUG|Found key {e6223948-3c1b-456e-b30d-1956394c278e}. 
+2022-08-29 22:59:15.6328|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|DEBUG|Considering key {e6223948-3c1b-456e-b30d-1956394c278e} with expiration date 2022-10-27 12:44:34Z as default key. 
+2022-08-29 22:59:15.7230|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|DEBUG|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-08-29 22:59:15.7230|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|DEBUG|Decrypting secret element using Windows DPAPI. 
+2022-08-29 22:59:15.7230|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|DEBUG|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-08-29 22:59:15.7230|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|DEBUG|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2022-08-29 22:59:15.7230|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|DEBUG|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2022-08-29 22:59:15.7306|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|DEBUG|Using key {e6223948-3c1b-456e-b30d-1956394c278e} as the default key. 
+2022-08-29 22:59:15.7306|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|DEBUG|Key ring with default key {e6223948-3c1b-456e-b30d-1956394c278e} was loaded during application startup. 
+2022-08-29 22:59:16.0435|Microsoft.AspNetCore.Hosting.Diagnostics|DEBUG|Loaded hosting startup assembly Course_project 
+2022-08-29 22:59:16.0435|Microsoft.AspNetCore.Hosting.Diagnostics|DEBUG|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2022-08-29 22:59:16.0435|Microsoft.AspNetCore.Hosting.Diagnostics|DEBUG|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2022-08-29 22:59:16.0435|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2022-08-29 22:59:16.0435|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2022-08-29 22:59:16.0435|Microsoft.Hosting.Lifetime|INFO|Content root path: G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project 
+2022-08-29 22:59:16.0435|Microsoft.Extensions.Hosting.Internal.Host|DEBUG|Hosting started 
+2022-08-29 22:59:16.1044|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/ - - 
+2022-08-29 22:59:16.1431|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|DEBUG|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-29 22:59:16.1431|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:16.1431|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path / does not match a supported file type 
+2022-08-29 22:59:16.1662|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|1 candidate(s) found for the request path '/' 
+2022-08-29 22:59:16.1677|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|Endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-08-29 22:59:16.1677|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request matched endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-29 22:59:16.1677|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-29 22:59:16.1677|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|DEBUG|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-29 22:59:16.2146|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Course_project.Controllers.HomeController (Course_project). 
+2022-08-29 22:59:16.2146|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of authorization filters (in the following order): None 
+2022-08-29 22:59:16.2146|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-29 22:59:16.2146|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-08-29 22:59:16.2146|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of exception filters (in the following order): None 
+2022-08-29 22:59:16.2146|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-29 22:59:16.2146|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:16.2146|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:16.2146|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executing controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-29 22:59:16.7123|Microsoft.EntityFrameworkCore.Infrastructure|DEBUG|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-29 22:59:16.7385|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executed controller factory for controller Course_project.Controllers.HomeController (Course_project) 
+2022-08-29 22:59:16.7385|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-29 22:59:16.7385|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-29 22:59:16.7385|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-29 22:59:16.7385|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method Course_project.Controllers.HomeController.Index (Course_project) - Validation state: Valid 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method Course_project.Controllers.HomeController.Index (Course_project), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5138ms. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Address/GetAddresses.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|DEBUG|Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache miss for view 'Index' in controller 'Home'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Located compiled view for view at path '/Views/Home/Index.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Could not find a file for view at path '/Views/Home/_ViewStart.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2022-08-29 22:59:16.7446|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2022-08-29 22:59:16.7618|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|DEBUG|The view path '/Views/Home/Index.cshtml' was found in 6.875ms. 
+2022-08-29 22:59:16.8266|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-29 22:59:16.8266|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Login/Register and  
+2022-08-29 22:59:16.8266|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Login/Register 
+2022-08-29 22:59:16.8266|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-29 22:59:16.8266|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/GetUser and  
+2022-08-29 22:59:16.8266|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/GetUser 
+2022-08-29 22:59:16.8409|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache miss for view '_Layout' in controller 'Home'. 
+2022-08-29 22:59:16.8409|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Could not find a file for view at path '/Views/Home/_Layout.cshtml'. 
+2022-08-29 22:59:16.8409|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2022-08-29 22:59:16.8639|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-29 22:59:16.8639|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-29 22:59:16.8639|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-29 22:59:16.8639|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-29 22:59:16.8639|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-29 22:59:16.8639|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-29 22:59:16.8639|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-29 22:59:16.8639|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2022-08-29 22:59:16.8639|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2022-08-29 22:59:17.0080|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 255.2589ms. 
+2022-08-29 22:59:17.0080|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-29 22:59:17.0080|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:17.0080|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:17.0101|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:17.0101|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:17.0101|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action Course_project.Controllers.HomeController.Index (Course_project) in 795.2146ms 
+2022-08-29 22:59:17.0101|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'Course_project.Controllers.HomeController.Index (Course_project)' 
+2022-08-29 22:59:17.0101|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup is scheduled to include browser refresh script injection. 
+2022-08-29 22:59:17.0354|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup was updated to include browser refresh script injection. 
+2022-08-29 22:59:17.0711|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18086456126605361154" disconnecting. 
+2022-08-29 22:59:17.0732|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/ - - - 200 - text/html;+charset=utf-8 969.8210ms 
+2022-08-29 22:59:17.1027|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css - - 
+2022-08-29 22:59:17.1027|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-29 22:59:17.1027|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/site.css - - 
+2022-08-29 22:59:17.1027|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-29 22:59:17.1027|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - 
+2022-08-29 22:59:17.1027|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:17.1027|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:17.1027|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:17.1027|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - - 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /js/site.js was not modified 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/site.css was not modified 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|Handled. Status code: 304 File: /css/site.css 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|Handled. Status code: 304 File: /lib/bootstrap/dist/css/bootstrap.min.css 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|Handled. Status code: 304 File: /lib/bootstrap/dist/js/bootstrap.bundle.min.js 
+2022-08-29 22:59:17.1057|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|Handled. Status code: 304 File: /js/site.js 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 15.5664ms 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 8.7872ms 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18158513712053354497" disconnecting. 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/lib/jquery/dist/jquery.min.js - - 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery/dist/jquery.min.js was not modified 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|Handled. Status code: 304 File: /lib/jquery/dist/jquery.min.js 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 0.5828ms 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 17.7643ms 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18086456126605361156" disconnecting. 
+2022-08-29 22:59:17.1207|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/site.css - - - 304 - text/css 21.9628ms 
+2022-08-29 22:59:17.1380|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-29 22:59:17.1380|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 35.2523ms 
+2022-08-29 22:59:17.1380|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:17.1380|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-29 22:59:17.1380|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-29 22:59:17.1380|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-29 22:59:17.1380|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 0.6310ms 
+2022-08-29 22:59:17.1380|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18086456118015426561" disconnecting. 
+2022-08-29 22:59:17.1380|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 40.3854ms 
+2022-08-29 22:59:17.2007|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18086456122310393857" disconnecting. 
+2022-08-29 22:59:17.2007|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.2459ms 
+2022-08-29 22:59:17.3230|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/favicon.ico - - 
+2022-08-29 22:59:17.3230|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:17.3230|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|TRACE|Range header's value is empty. 
+2022-08-29 22:59:17.3400|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\wwwroot\favicon.ico' 
+2022-08-29 22:59:17.3400|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571306091282435" disconnecting. 
+2022-08-29 22:59:17.3400|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/favicon.ico - - - 200 5430 image/x-icon 17.6780ms 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/Address/GetAddresses - - 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /Address/GetAddresses does not match a supported file type 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|1 candidate(s) found for the request path '/Address/GetAddresses' 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|Endpoint 'Course_project.Controllers.AddressController.GetAddresses (Course_project)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Address/GetAddresses' 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request matched endpoint 'Course_project.Controllers.AddressController.GetAddresses (Course_project)' 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'Course_project.Controllers.AddressController.GetAddresses (Course_project)' 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "GetAddresses", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller Course_project.Controllers.AddressController (Course_project). 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of authorization filters (in the following order): None 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of exception filters (in the following order): None 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executing controller factory for controller Course_project.Controllers.AddressController (Course_project) 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|DEBUG|Executed controller factory for controller Course_project.Controllers.AddressController (Course_project) 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-29 22:59:32.7629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method Course_project.Controllers.AddressController.GetAddresses (Course_project) - Validation state: Valid 
+2022-08-29 22:59:33.8121|Microsoft.EntityFrameworkCore.Model|DEBUG|The index {'FsuggentionId'} was not created on entity type 'CfWithCp' as the properties are already covered by the index {'FsuggentionId', 'PcontractId'}. 
+2022-08-29 22:59:33.8121|Microsoft.EntityFrameworkCore.Model|DEBUG|The index {'WaybillId'} was not created on entity type 'WC' as the properties are already covered by the index {'WaybillId', 'CarId'}. 
+2022-08-29 22:59:33.8121|Microsoft.EntityFrameworkCore.Model|DEBUG|The index {'WaybillId'} was not created on entity type 'WFc' as the properties are already covered by the index {'WaybillId', 'FsuggentionId'}. 
+2022-08-29 22:59:33.8121|Microsoft.EntityFrameworkCore.Model|DEBUG|The index {'WaybillId'} was not created on entity type 'WPc' as the properties are already covered by the index {'WaybillId', 'PcontractId'}. 
+2022-08-29 22:59:33.9956|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 5.0.17 initialized 'Transport_DBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+2022-08-29 22:59:34.0108|Microsoft.EntityFrameworkCore.Query|DEBUG|Compiling query expression: 
+'DbSet<Address>()' 
+2022-08-29 22:59:34.1547|Microsoft.EntityFrameworkCore.Query|DEBUG|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Address>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Address.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Address.AccurateDestination (string), 1], [Property: Address.MainDestination (string) Required, 2], [Property: Address.NextId (Nullable<int>) FK Index, 3], }
+        SELECT a.id, a.accurate_destination, a.main_destination, a.next_id
+        FROM address AS a), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Address>, 
+    Course_project.DAL.Transport_DBContext, 
+    False, 
+    False
+)' 
+2022-08-29 22:59:34.1802|Microsoft.EntityFrameworkCore.Database.Command|DEBUG|Creating DbCommand for 'ExecuteReader'. 
+2022-08-29 22:59:34.2132|Microsoft.EntityFrameworkCore.Database.Command|DEBUG|Created DbCommand for 'ExecuteReader' (32ms). 
+2022-08-29 22:59:34.2132|Microsoft.EntityFrameworkCore.Database.Connection|DEBUG|Opening connection to database 'Transport_DB' on server 'tcp://localhost:5432'. 
+2022-08-29 22:59:35.2238|Microsoft.EntityFrameworkCore.Database.Connection|DEBUG|Opened connection to database 'Transport_DB' on server 'tcp://localhost:5432'. 
+2022-08-29 22:59:35.2296|Microsoft.EntityFrameworkCore.Database.Command|DEBUG|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a.id, a.accurate_destination, a.main_destination, a.next_id
+FROM address AS a 
+2022-08-29 22:59:35.2956|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (64ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a.id, a.accurate_destination, a.main_destination, a.next_id
+FROM address AS a 
+2022-08-29 22:59:35.3192|Microsoft.EntityFrameworkCore.ChangeTracking|DEBUG|Context 'Transport_DBContext' started tracking 'Address' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-08-29 22:59:35.3458|Microsoft.EntityFrameworkCore.ChangeTracking|DEBUG|Context 'Transport_DBContext' started tracking 'Address' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-08-29 22:59:35.3458|Microsoft.EntityFrameworkCore.ChangeTracking|DEBUG|Context 'Transport_DBContext' started tracking 'Address' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-08-29 22:59:35.3551|Microsoft.EntityFrameworkCore.ChangeTracking|DEBUG|Context 'Transport_DBContext' started tracking 'Address' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-08-29 22:59:35.3551|Microsoft.EntityFrameworkCore.ChangeTracking|DEBUG|Context 'Transport_DBContext' started tracking 'Address' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-08-29 22:59:35.3551|Microsoft.EntityFrameworkCore.ChangeTracking|DEBUG|Context 'Transport_DBContext' started tracking 'Address' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-08-29 22:59:35.3551|Microsoft.EntityFrameworkCore.Database.Command|DEBUG|A data reader was disposed. 
+2022-08-29 22:59:35.3551|Microsoft.EntityFrameworkCore.Database.Connection|DEBUG|Closing connection to database 'Transport_DB' on server 'tcp://localhost:5432'. 
+2022-08-29 22:59:35.3551|Microsoft.EntityFrameworkCore.Database.Connection|DEBUG|Closed connection to database 'Transport_DB' on server 'tcp://localhost:5432'. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method Course_project.Controllers.AddressController.GetAddresses (Course_project), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2590.1607ms. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache miss for view 'GetAddresses' in controller 'Address'. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Located compiled view for view at path '/Views/Address/GetAddresses.cshtml'. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Could not find a file for view at path '/Views/Address/_ViewStart.cshtml'. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view GetAddresses. 
+2022-08-29 22:59:35.3551|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|DEBUG|The view path '/Views/Address/GetAddresses.cshtml' was found in 0.5929ms. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|DEBUG|View lookup cache miss for view '_Layout' in controller 'Address'. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Could not find a file for view at path '/Views/Address/_Layout.cshtml'. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|TRACE|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|DEBUG|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view GetAddresses executed in 8.7332ms. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|TRACE|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action Course_project.Controllers.AddressController.GetAddresses (Course_project) in 2601.3373ms 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'Course_project.Controllers.AddressController.GetAddresses (Course_project)' 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup is scheduled to include browser refresh script injection. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|DEBUG|Response markup was updated to include browser refresh script injection. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18302628895834243074" disconnecting. 
+2022-08-29 22:59:35.3699|Microsoft.EntityFrameworkCore.Infrastructure|DEBUG|'Transport_DBContext' disposed. 
+2022-08-29 22:59:35.3699|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/Address/GetAddresses - - - 200 - text/html;+charset=utf-8 2615.9308ms 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - - 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/card.css - - 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/card.css does not match an existing file 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/card.css' 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18230571310386249738" disconnecting. 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/card.css - - - 404 - - 1.1290ms 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/2 GET https://localhost:44366/css/paragraph.css - - 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|TRACE|All hosts are allowed. 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|DEBUG|The request path /css/paragraph.css does not match an existing file 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|DEBUG|No candidates found for the request path '/css/paragraph.css' 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|DEBUG|Request did not match any endpoints 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18086456122310393859" disconnecting. 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/css/paragraph.css - - - 404 - - 6.4182ms 
+2022-08-29 22:59:35.4329|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 8.8822ms 
+2022-08-29 22:59:35.4664|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|DEBUG|Connection ID "18014398528272465921" disconnecting. 
+2022-08-29 22:59:35.4664|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.6107ms 

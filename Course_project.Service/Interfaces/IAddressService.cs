@@ -14,9 +14,9 @@ namespace Course_project.Service.Interfaces
         Task<IBaseResponse<IEnumerable<Address>>> GetAddresses();
         Task<IBaseResponse<Address>> GetAddress(int id);
         Task<IBaseResponse<Address>> GetAddressByName(string address);
-        Task<IBaseResponse<AddressViewModel>> CreateAddress(AddressViewModel addressViewModel);
+        Task<IBaseResponse<bool>> CreateAddress(AddressViewModel addressViewModel);
         Task<IBaseResponse<bool>> DeleteAddress(int id);
-
+        Task<IBaseResponse<Address>> Update(int id, AddressViewModel model);
 
 
     }

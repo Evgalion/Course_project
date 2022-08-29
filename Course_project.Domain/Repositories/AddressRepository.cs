@@ -37,7 +37,7 @@ namespace Course_project.DAL.Repositories
             return await _DBContext.Addresses.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<List<Address>> GetAll()
+        public async Task<List<Address>> Select()
         {
             return await _DBContext.Addresses.ToListAsync();
         }
@@ -48,11 +48,11 @@ namespace Course_project.DAL.Repositories
             return await _DBContext.Addresses.FirstOrDefaultAsync(x => x.MainDestination == name);
         }
 
-        public async Task<bool> Update(Address entity)
+        public async Task<Address> Update(Address entity)
         {
-            _DBContext.Entry(entity).State = EntityState.Modified;
+            _DBContext.Update(entity);
             await _DBContext.SaveChangesAsync();
-            return true;
+            return entity;
         }
     }
 }

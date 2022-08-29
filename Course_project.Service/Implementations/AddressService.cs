@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Course_project.DAL.Interfaces;
+using Course_project.DAL.Interfaces; 
 using Course_project.Domain.Enum;
 using Course_project.Domain.ViewModels.Address;
 
@@ -22,32 +22,37 @@ namespace Course_project.Service.Implementations
         }
 
 
-        //29.08 1-11 Сделать Update
-        public async Task<IBaseResponse<bool>> UpdateAddress(AddressViewModel addressViewModel)
+        // TODO: Может переделать для AddressViewModel
+
+        //TODO: 29.08 1-11 Сделать Update
+        public async Task<IBaseResponse<Address>> Update(int id, AddressViewModel model)
         {
-            //var baseResponse = new BaseResponse<bool>();
-            //try
-            //{
-            //    var addr = new Address()
-            //    {
-            //        MainDestination = addressViewModel.MainDestination,
-            //        AccurateDestination = addressViewModel.AccurateDestination,
-            //        NextId = addressViewModel.NextId
-            //    };
+            var baseResponse = new BaseResponse<Address>();
+            try
+            {
+               var address = await _addressRepository.Get(id);
+               if(address == null)
+                {
+                    baseResponse.StatusCode = StatusCode.DataAddressNotFound;
+                    baseResponse.Description = "Address not found";
+                    return baseResponse;
+                }
+                address.MainDestination = model.MainDestination;
+                address.AccurateDestination = model.AccurateDestination;
+                address.NextId = model.NextId;
 
-            //    await _addressRepository.Create(addr);
-            //    baseResponse.Data = true;
-            //    return baseResponse;
-            //}
-            //catch (Exception ex)
-            //{
-            //    return new BaseResponse<bool>()
-            //    {
-            //        Description = $"[GetAddress : {ex.Message}]",
-            //        StatusCode = StatusCode.InternalServerError
-            //    };
-            //}
+                await _addressRepository.Update(address);
 
+                return baseResponse;
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse<Address>()
+                {
+                    Description = $"[Update : {ex.Message}]",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
         }
 
         public async Task<IBaseResponse<bool>> CreateAddress(AddressViewModel addressViewModel)
@@ -160,7 +165,7 @@ namespace Course_project.Service.Implementations
             var baseResponse = new BaseResponse<IEnumerable<Address>>();
             try
             {
-                var addresses = await _addressRepository.GetAll();
+                var addresses = await _addressRepository.Select();
                 if(addresses.Count == 0)
                 {
                     baseResponse.Description = "Найденно 0 элементов";
@@ -181,5 +186,7 @@ namespace Course_project.Service.Implementations
                 };
             }
         }
+
+       
     }
 }

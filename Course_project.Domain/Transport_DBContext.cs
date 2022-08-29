@@ -10,6 +10,8 @@ namespace Course_project.DAL
 {
     public partial class Transport_DBContext : DbContext
     {
+
+        //TODO: Нужно перепроверить все ограничения на поля, 
         public Transport_DBContext()
         {
         }
@@ -50,7 +52,8 @@ namespace Course_project.DAL
         }
 
 
-        // добавить для полей id свойство ValueGeneratedOnAdd
+
+        //TODO: добавить для полей id свойство ValueGeneratedOnAdd
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasPostgresEnum(null, "gender", new[] { "Женщина", "Мужчина" })

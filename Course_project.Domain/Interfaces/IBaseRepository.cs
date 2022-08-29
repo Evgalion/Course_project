@@ -9,10 +9,10 @@ namespace Course_project.DAL.Interfaces
     public interface IBaseRepository<T> where T : class
     {
         Task<T> Get(int id);
-        Task<List<T>> GetAll();
+        Task<List<T>> Select();
         Task<bool> Create(T entity);
         Task<bool> Delete(T entity);
-        Task<bool> Update(T entity);
+        Task<T> Update(T entity);
 
     }
 }
