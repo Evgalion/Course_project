@@ -90,7 +90,9 @@ namespace Course_project.DAL
             {
                 entity.ToTable("car");
 
-                entity.Property(e => e.CarId).HasColumnName("car_id");
+                entity.Property(e => e.CarId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("car_id");
 
                 entity.Property(e => e.Brand)
                     .IsRequired()
@@ -113,6 +115,7 @@ namespace Course_project.DAL
                 entity.Property(e => e.Year)
                     .HasColumnType("date")
                     .HasColumnName("year");
+
             });
 
             modelBuilder.Entity<CarDriver>(entity =>

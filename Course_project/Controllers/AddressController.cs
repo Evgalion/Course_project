@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Course_project.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Course_project.Domain.ViewModels.Address;
+using System;
 
 namespace Course_project.Controllers
 {
@@ -14,9 +15,10 @@ namespace Course_project.Controllers
        
         private readonly IAddressService _addressService;
 
+
         public AddressController(IAddressService addressService)
         {
-            _addressService = addressService;
+            _addressService = addressService ?? throw new Argu(nameof(addressService)); 
         }
 
        
@@ -57,7 +59,7 @@ namespace Course_project.Controllers
         }
 
         //тип update
-        [HttpGet]
+        [HttpPut]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Save(int id)
         {
