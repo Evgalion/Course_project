@@ -75,7 +75,7 @@ namespace Course_project.Service.Implementations
             {
                 return new BaseResponse<bool>()
                 {
-                    Description = $"[GetAddress : {ex.Message}]",
+                    Description = $"[CreateAddress : {ex.Message}]",
                     StatusCode = StatusCode.InternalServerError
                 };
             }

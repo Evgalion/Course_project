@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Course_project.DAL.Repositories
 {
+    // TODO: сделать наследование от BaseRepository
     public class AddressRepository : IAddressRepository
     {
         private readonly Transport_DBContext _DBContext;

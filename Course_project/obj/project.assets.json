@@ -1267,12 +1267,23 @@
           "bin/placeholder/Course_project.Domain.dll": {}
         }
       },
+      "Course_project.Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Course_project.Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Course_project.Helper.dll": {}
+        }
+      },
       "Course_project.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Course_project.DAL": "1.0.0",
-          "Course_project.Domain": "1.0.0"
+          "Course_project.Domain": "1.0.0",
+          "Course_project.Helper": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Course_project.Service.dll": {}
@@ -4445,6 +4456,11 @@
       "type": "project",
       "path": "../Course_project.DAL/Course_project.Domain.csproj",
       "msbuildProject": "../Course_project.DAL/Course_project.Domain.csproj"
+    },
+    "Course_project.Helper/1.0.0": {
+      "type": "project",
+      "path": "../Course_project.Helper/Course_project.Helper.csproj",
+      "msbuildProject": "../Course_project.Helper/Course_project.Helper.csproj"
     },
     "Course_project.Service/1.0.0": {
       "type": "project",

@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Course_project.DAL\Course_project.Domain.csproj" />
     <ProjectReference Include="..\Course_project.Domain\Course_project.DAL.csproj" />
+    <ProjectReference Include="..\Course_project.Helper\Course_project.Helper.csproj" />
   </ItemGroup>
 
 </Project>

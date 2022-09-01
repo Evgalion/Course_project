@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course_project.Service", "C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helper", "Helper", "{8F9E657C-574D-4BEB-B2B4-FC198893336B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course_project.Helper", "Course_project.Helper\Course_project.Helper.csproj", "{36F8411C-F30B-4DD5-8BC6-3675EE0F1AA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course_project.Helper", "Course_project.Helper\Course_project.Helper.csproj", "{36F8411C-F30B-4DD5-8BC6-3675EE0F1AA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

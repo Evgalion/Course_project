@@ -249,6 +249,16 @@
         "runtime": {
           "bin/placeholder/Course_project.Domain.dll": {}
         }
+      },
+      "Course_project.Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Course_project.Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Course_project.Helper.dll": {}
+        }
       }
     }
   },
@@ -710,12 +720,18 @@
       "type": "project",
       "path": "../Course_project.DAL/Course_project.Domain.csproj",
       "msbuildProject": "../Course_project.DAL/Course_project.Domain.csproj"
+    },
+    "Course_project.Helper/1.0.0": {
+      "type": "project",
+      "path": "../Course_project.Helper/Course_project.Helper.csproj",
+      "msbuildProject": "../Course_project.Helper/Course_project.Helper.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Course_project.DAL >= 1.0.0",
-      "Course_project.Domain >= 1.0.0"
+      "Course_project.Domain >= 1.0.0",
+      "Course_project.Helper >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -750,6 +766,9 @@
             },
             "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.Domain\\Course_project.DAL.csproj": {
               "projectPath": "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.Domain\\Course_project.DAL.csproj"
+            },
+            "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.Helper\\Course_project.Helper.csproj": {
+              "projectPath": "G:\\Учёба\\3 курс - 2 семестр\\Проектирование_информ_систем\\Практика\\Course_project\\Course_project.Helper\\Course_project.Helper.csproj"
             }
           }
         }
