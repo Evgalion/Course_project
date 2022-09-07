@@ -43,6 +43,7 @@ namespace Course_project.Service.Implementations
 
                 await _addressRepository.Update(address);
 
+                baseResponse.StatusCode = StatusCode.OK;
                 return baseResponse;
             }
             catch (Exception ex)
@@ -55,7 +56,7 @@ namespace Course_project.Service.Implementations
             }
         }
 
-        public async Task<IBaseResponse<bool>> CreateAddress(AddressViewModel addressViewModel)
+        public async Task<IBaseResponse<bool>> AddAddress(AddressViewModel addressViewModel)
         {
             var baseResponse = new BaseResponse<bool>();
             try
@@ -67,7 +68,7 @@ namespace Course_project.Service.Implementations
                     NextId = addressViewModel.NextId
                 };
 
-                await _addressRepository.Create(addr);
+                await _addressRepository.Add(addr);
                 baseResponse.Data = true;
                 return baseResponse;
             }
@@ -75,13 +76,13 @@ namespace Course_project.Service.Implementations
             {
                 return new BaseResponse<bool>()
                 {
-                    Description = $"[CreateAddress : {ex.Message}]",
+                    Description = $"[AddAddress : {ex.Message}]",
                     StatusCode = StatusCode.InternalServerError
                 };
             }
            
         }
-        public async Task<IBaseResponse<bool>> DeleteAddress(int id)
+        public async Task<IBaseResponse<bool>> RemoveAddress(int id)
         {
             var baseResponse = new BaseResponse<bool>();
             try
@@ -94,7 +95,7 @@ namespace Course_project.Service.Implementations
                     baseResponse.Data = false;
                     return baseResponse;
                 }
-                await _addressRepository.Delete(address);
+                await _addressRepository.Remove(address);
                 baseResponse.Data = true;
                 return baseResponse;
             }
@@ -102,41 +103,41 @@ namespace Course_project.Service.Implementations
             {
                 return new BaseResponse<bool>()
                 {
-                    Description = $"[DeleteAddress : {ex.Message}]",
+                    Description = $"[RemoveAddress : {ex.Message}]",
                     StatusCode = StatusCode.InternalServerError
                 };
             }
         }
 
-        public async Task<IBaseResponse<Address>> GetAddressByName(string address)
-        {
-            var baseResponse = new BaseResponse<Address>();
-            try
-            {
-                var addrs = await _addressRepository.GetByName(address);
-                if (addrs == null)
-                {
-                    baseResponse.Description = "Data Address isn't found";
-                    baseResponse.StatusCode = StatusCode.DataAddressNotFound;
-                    return baseResponse;
-                }
-                baseResponse.Data = addrs;
-                return baseResponse;
+        //public async Task<IBaseResponse<Address>> GetAddressByName(string address)
+        //{
+        //    var baseResponse = new BaseResponse<Address>();
+        //    try
+        //    {
+        //        var addrs = await _addressRepository.GetByName(address);
+        //        if (addrs == null)
+        //        {
+        //            baseResponse.Description = "Data Address isn't found";
+        //            baseResponse.StatusCode = StatusCode.DataAddressNotFound;
+        //            return baseResponse;
+        //        }
+        //        baseResponse.Data = addrs;
+        //        return baseResponse;
 
-            }
-            catch (Exception ex)
-            {
-                return new BaseResponse<Address>()
-                {
-                    Description = $"[GetAddressByName : {ex.Message}]",
-                    StatusCode = StatusCode.InternalServerError
-                };
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return new BaseResponse<Address>()
+        //        {
+        //            Description = $"[GetAddressByName : {ex.Message}]",
+        //            StatusCode = StatusCode.InternalServerError
+        //        };
+        //    }
+        //}
 
-        public async Task<IBaseResponse<Address>> GetAddress(int id)
+        public async Task<IBaseResponse<AddressViewModel>> GetAddress(int id)
         {
-            var baseResponse = new BaseResponse<Address>();
+            var baseResponse = new BaseResponse<AddressViewModel>();
             try
             {
                 var address = await _addressRepository.Get(id);
@@ -146,13 +147,21 @@ namespace Course_project.Service.Implementations
                     baseResponse.StatusCode = StatusCode.DataAddressNotFound;
                     return baseResponse;
                 }
-                baseResponse.Data = address;
+                var data = new AddressViewModel()
+                {
+                    MainDestination = address.MainDestination,
+                    AccurateDestination = address.AccurateDestination,
+                    NextId = address.NextId,
+                };
+                baseResponse.Data = data;
+                baseResponse.StatusCode = StatusCode.OK;
+
                 return baseResponse;
 
             }
             catch (Exception ex)
             {
-                return new BaseResponse<Address>()
+                return new BaseResponse<AddressViewModel>()
                 {
                     Description = $"[GetAddress : {ex.Message}]",
                     StatusCode = StatusCode.InternalServerError
@@ -165,11 +174,11 @@ namespace Course_project.Service.Implementations
             var baseResponse = new BaseResponse<IEnumerable<Address>>();
             try
             {
-                var addresses = await _addressRepository.Select();
+                var addresses = await _addressRepository.GetAll();
                 if(addresses.Count == 0)
                 {
                     baseResponse.Description = "Найденно 0 элементов";
-                    baseResponse.StatusCode = StatusCode.OK;
+                    baseResponse.StatusCode = StatusCode.DataAddressNotFound;
                 }
 
                 baseResponse.Data = addresses;
@@ -187,6 +196,6 @@ namespace Course_project.Service.Implementations
             }
         }
 
-       
+ 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Course_project.Domain.Enum;
+using System;
 using System.Collections.Generic;
 
 #nullable disable
@@ -19,6 +20,7 @@ namespace Course_project.Domain.Models
         public short TotalPrice { get; set; }
         public DateTime Date { get; set; }
 
+        public StatusOfContract Status { get; set; }
         public virtual Farmer Farmer { get; set; }
         public virtual Fsuggention Fsuggention { get; set; }
         public virtual ICollection<CfWithCp> CfWithCps { get; set; }

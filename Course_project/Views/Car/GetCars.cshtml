@@ -1,0 +1,18 @@
+﻿@model List<Course_project.Domain.Models.Car>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+ @foreach (var car in Model)
+        {
+           <p>CarId - @car.CarId</p>
+           <p>Model - @car.Model</p>
+           <p>Brand - @car.Brand</p>
+           <p>StartOperation - @car.StartOperation</p>
+           <p>Year - @car.Year</p>
+           <p>LiftingCapacity - @car.LiftingCapacity</p>
+           <p>Status - @car.Status</p>
+
+        }

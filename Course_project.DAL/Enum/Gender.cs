@@ -9,9 +9,9 @@ namespace Course_project.Domain.Enum
 {
     public enum Gender
     {
-        [Display(Name = "Пшеница")]
-        Пшеница = 0,
-        [Display(Name = "Кукуруза")]
-        Кукуруза = 1,
+        [Display(Name = "Женщина")]
+        Женщина = 1,
+        [Display(Name = "Мужчина")]
+        Мужчина = 2,
     }
 }

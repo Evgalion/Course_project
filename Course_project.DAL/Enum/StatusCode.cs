@@ -10,6 +10,7 @@ namespace Course_project.Domain.Enum
     {
 
         DataAddressNotFound = 0,
+        DataCarNotFound = 1,
         OK = 200,
         InternalServerError = 500
     }

@@ -7,17 +7,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Course_project.Domain.Enum
 {
-    public enum TypeofProduct
+    public enum TypeOfProduct
     {
         [Display(Name = "Пшеница")]
-        Пшеница = 0,
+        Пшеница = 1,
         [Display(Name = "Кукуруза")]
-        Кукуруза = 1,
+        Кукуруза = 2,
         [Display(Name = "Подсолнечник")]
-        Подсолнечник = 2,
+        Подсолнечник = 3,
         [Display(Name = "Ячмень")]
-        Ячмень = 3,
+        Ячмень = 4,
         [Display(Name = "Соя")]
-        Соя = 4
+        Соя = 5
     }
 }

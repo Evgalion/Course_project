@@ -1348,10 +1348,19 @@
           "Course_project.Domain.dll": {}
         }
       },
+      "Course_project.Helper/1.0.0": {
+        "runtime": {
+          "Course_project.Helper.dll": {}
+        },
+        "compile": {
+          "Course_project.Helper.dll": {}
+        }
+      },
       "Course_project.Service/1.0.0": {
         "dependencies": {
           "Course_project.DAL": "1.0.0",
-          "Course_project.Domain": "1.0.0"
+          "Course_project.Domain": "1.0.0",
+          "Course_project.Helper": "1.0.0"
         },
         "runtime": {
           "Course_project.Service.dll": {}
@@ -3641,6 +3650,11 @@
       "sha512": ""
     },
     "Course_project.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Course_project.Helper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

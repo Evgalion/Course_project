@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace Course_project.Domain.Enum
 {
-    public enum StatusofCar 
+    public enum StatusOfCar 
     {
-       [Display(Name = "На ремонте")]
-        На_ремонте = 0,
        [Display(Name = "В процессе")]
-        В_процессе = 1
+        Процесс = 1,
+       [Display(Name = "На ремонте")]
+        Ремонт  = 2
     }
 }
+ 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Course_project.Domain.Enum;
+using System;
 using System.Collections.Generic;
 
 #nullable disable
@@ -14,6 +15,7 @@ namespace Course_project.Domain.Models
 
         public int LogId { get; set; }
         public int Quality { get; set; }
+        public TypeOfProduct Tproduct { get; set; }
         public short Price { get; set; }
         public int MaxWeight { get; set; }
         public DateTime Deadline { get; set; }

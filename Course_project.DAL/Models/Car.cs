@@ -21,7 +21,7 @@ namespace Course_project.Domain.Models
         public DateTime Year { get; set; }
         public DateTime StartOperation { get; set; }
 
-        public string Status { get; set; }
+        public StatusOfCar Status { get; set; }
         public short LiftingCapacity { get; set; }
 
         public virtual ICollection<CarDriver> CarDrivers { get; set; }

@@ -13,9 +13,9 @@ namespace Course_project.Service.Interfaces
     public interface ICarService
     {
         Task<IBaseResponse<IEnumerable<Car>>> GetCars();
-        Task<IBaseResponse<Car>> GetCar(int id);
-        Task<IBaseResponse<bool>> CreateCar(CarViewModel addressViewModel);
-        Task<IBaseResponse<bool>> DeleteCar(int id);
+        Task<IBaseResponse<CarViewModel>> GetCar(int id);
+        Task<IBaseResponse<bool>> AddCar(CarViewModel addressViewModel);
+        Task<IBaseResponse<bool>> RemoveCar(int id);
         Task<IBaseResponse<Car>> Update(int id, CarViewModel model);
     }
 }

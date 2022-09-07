@@ -19,7 +19,8 @@ namespace Course_project.Domain.ViewModels.Car
         [Required]
         public DateTime Year { get; set; }
         [Required]
-        public StatusofCar Status { get; set; }
+        [Display(Name = "")]
+        public string Status { get; set; }
         [Required]
         public short LiftingCapacity { get; set; }
     }

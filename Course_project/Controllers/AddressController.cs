@@ -18,10 +18,9 @@ namespace Course_project.Controllers
 
         public AddressController(IAddressService addressService)
         {
-            _addressService = addressService ?? throw new Argu(nameof(addressService)); 
+            _addressService = addressService ?? throw new ArgumentNullException(nameof(addressService)); 
         }
 
-       
 
         [HttpGet]
         public async Task<IActionResult> GetAddresses()
@@ -50,7 +49,7 @@ namespace Course_project.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
-            var response = await _addressService.DeleteAddress(id);
+            var response = await _addressService.RemoveAddress(id);
             if (response.StatusCode == Domain.Enum.StatusCode.OK)
             {
                 return RedirectToAction("GetAddresses");
@@ -79,7 +78,7 @@ namespace Course_project.Controllers
             {
                 if(model.Id == 0 )
                 {
-                    await _addressService.CreateAddress(model);
+                    await _addressService.AddAddress(model);
                 }
                 else
                 {

@@ -34,9 +34,12 @@ namespace Course_project
             var connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<Transport_DBContext>(options =>
                 options.UseNpgsql(connection));
+            
 
             services.AddScoped<IAddressRepository, AddressRepository>();
             services.AddScoped<IAddressService,AddressService>();
+            services.AddScoped<ICarRepository, CarRepository>();
+            services.AddScoped<ICarService, CarService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -9,15 +9,12 @@ using System.Threading.Tasks;
 
 namespace Course_project.Service.Interfaces
 {
-    public interface IAddressService
+    public interface IAddressService 
     {
         Task<IBaseResponse<IEnumerable<Address>>> GetAddresses();
-        Task<IBaseResponse<Address>> GetAddress(int id);
-        Task<IBaseResponse<Address>> GetAddressByName(string address);
-        Task<IBaseResponse<bool>> CreateAddress(AddressViewModel addressViewModel);
-        Task<IBaseResponse<bool>> DeleteAddress(int id);
+        Task<IBaseResponse<AddressViewModel>> GetAddress(int id);
+        Task<IBaseResponse<bool>> AddAddress(AddressViewModel addressViewModel);
+        Task<IBaseResponse<bool>> RemoveAddress(int id);
         Task<IBaseResponse<Address>> Update(int id, AddressViewModel model);
-
-
     }
 }

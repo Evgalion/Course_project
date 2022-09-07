@@ -2,6 +2,7 @@
 using Course_project.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Npgsql;
 
 
 #nullable disable
@@ -19,7 +20,9 @@ namespace Course_project.DAL
         public Transport_DBContext(DbContextOptions<Transport_DBContext> options)
             : base(options)
         {
+            
         }
+       
 
         public virtual DbSet<Address> Addresses { get; set; }
 
@@ -48,6 +51,7 @@ namespace Course_project.DAL
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseNpgsql("Server=localhost; Port=5432;Database=Transport_DB; UserName=postgres; Password=qwerty");
+                
             }
         }
 
@@ -56,12 +60,7 @@ namespace Course_project.DAL
         //TODO: добавить для полей id свойство ValueGeneratedOnAdd
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasPostgresEnum(null, "gender", new[] { "Женщина", "Мужчина" })
-                .HasPostgresEnum(null, "status_of_car", new[] { "На ремонте", "В процессе" })
-                .HasPostgresEnum(null, "status_of_contract", new[] { "В процессе", "Завершён", "Отменён" })
-                .HasPostgresEnum(null, "status_of_waybill", new[] { "В процессе", "Товар получен", "Товар отгружен", "Возврат товара" })
-                .HasPostgresEnum(null, "type_of_product", new[] { "Пшеница", "Кукуруза", "Подсолнечник", "Ячмень", "Соя" })
-                .HasAnnotation("Relational:Collation", "Russian_Russia.1251");
+            modelBuilder.HasAnnotation("Relational:Collation", "Russian_Russia.1251");
 
             modelBuilder.Entity<Address>(entity =>
             {
@@ -95,9 +94,9 @@ namespace Course_project.DAL
                 .HasColumnName("car_id");
 
                 entity.Property(e => e.Brand)
-                    .IsRequired()
-                    .HasMaxLength(40)
-                    .HasColumnName("brand");
+                   .IsRequired()
+                   .HasMaxLength(40)
+                   .HasColumnName("brand");
 
                 entity.Property(e => e.LiftingCapacity)
                     .HasColumnName("lifting_capacity")
@@ -112,17 +111,22 @@ namespace Course_project.DAL
                     .HasColumnType("date")
                     .HasColumnName("start_operation");
 
+                entity.Property(e => e.Status)
+                    .HasColumnName("status")
+                    .HasDefaultValueSql("1");
+
                 entity.Property(e => e.Year)
                     .HasColumnType("date")
                     .HasColumnName("year");
-
             });
 
             modelBuilder.Entity<CarDriver>(entity =>
             {
                 entity.ToTable("car_driver");
 
-                entity.Property(e => e.CarDriverId).HasColumnName("car_driver_id");
+                entity.Property(e => e.CarDriverId)
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("car_driver_id");
 
                 entity.Property(e => e.CarId).HasColumnName("car_id");
 
@@ -153,7 +157,9 @@ namespace Course_project.DAL
             {
                 entity.ToTable("car_maintaince");
 
-                entity.Property(e => e.CarMaintainceId).HasColumnName("car_maintaince_id");
+                entity.Property(e => e.CarMaintainceId)
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("car_maintaince_id");
 
                 entity.Property(e => e.CarDriverId).HasColumnName("car_driver_id");
 
@@ -211,7 +217,9 @@ namespace Course_project.DAL
 
                 entity.ToTable("dcontract");
 
-                entity.Property(e => e.ContractId).HasColumnName("contract_id");
+                entity.Property(e => e.ContractId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("contract_id");
 
                 entity.Property(e => e.DriverId).HasColumnName("driver_id");
 
@@ -241,7 +249,9 @@ namespace Course_project.DAL
                 entity.HasIndex(e => e.PhoneNumber, "driver_phone_number_key")
                     .IsUnique();
 
-                entity.Property(e => e.DriverId).HasColumnName("driver_id");
+                entity.Property(e => e.DriverId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("driver_id");
 
                 entity.Property(e => e.DateOfBirth)
                     .HasColumnType("date")
@@ -276,7 +286,9 @@ namespace Course_project.DAL
                 entity.HasIndex(e => e.PhoneNumber, "farmer_phone_number_key")
                     .IsUnique();
 
-                entity.Property(e => e.FarmerId).HasColumnName("farmer_id");
+                entity.Property(e => e.FarmerId)
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("farmer_id");
 
                 entity.Property(e => e.AccurateAddress).HasColumnName("accurate_address");
 
@@ -321,7 +333,7 @@ namespace Course_project.DAL
             modelBuilder.Entity<FsContract>(entity =>
             {
                 entity.HasKey(e => e.FsuggentionId)
-                    .HasName("fs_contract_pkey");
+                     .HasName("fs_contract_pkey");
 
                 entity.ToTable("fs_contract");
 
@@ -334,6 +346,10 @@ namespace Course_project.DAL
                     .HasColumnName("date");
 
                 entity.Property(e => e.FarmerId).HasColumnName("farmer_id");
+
+                entity.Property(e => e.Status)
+                    .HasColumnName("status")
+                    .HasDefaultValueSql("1");
 
                 entity.Property(e => e.TotalPrice).HasColumnName("total_price");
 
@@ -361,9 +377,13 @@ namespace Course_project.DAL
 
                 entity.ToTable("fsuggention");
 
-                entity.Property(e => e.SuggentionId).HasColumnName("suggention_id");
+                entity.Property(e => e.SuggentionId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("suggention_id");
 
                 entity.Property(e => e.Price).HasColumnName("price");
+
+                entity.Property(e => e.Product).HasColumnName("product");
 
                 entity.Property(e => e.Quality).HasColumnName("quality");
 
@@ -371,7 +391,8 @@ namespace Course_project.DAL
 
                 entity.Property(e => e.Weight)
                     .HasPrecision(6, 2)
-                    .HasColumnName("weight");
+                    .HasColumnName("weight")
+                    .HasDefaultValueSql("26");
 
                 entity.HasOne(d => d.Staff)
                     .WithMany(p => p.Fsuggentions)
@@ -384,13 +405,19 @@ namespace Course_project.DAL
             {
                 entity.ToTable("pcontract");
 
-                entity.Property(e => e.PcontractId).HasColumnName("pcontract_id");
+                entity.Property(e => e.PcontractId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("pcontract_id");
 
                 entity.Property(e => e.LogId).HasColumnName("log_id");
 
                 entity.Property(e => e.OwnPrice).HasColumnName("own_price");
 
                 entity.Property(e => e.StaffId).HasColumnName("staff_id");
+
+                entity.Property(e => e.Status)
+                  .HasColumnName("status")
+                  .HasDefaultValueSql("1");
 
                 entity.Property(e => e.TotalWeight).HasColumnName("total_weight");
 
@@ -414,7 +441,9 @@ namespace Course_project.DAL
                 entity.HasIndex(e => e.Telephone, "port_telephone_key")
                     .IsUnique();
 
-                entity.Property(e => e.PortId).HasColumnName("port_id");
+                entity.Property(e => e.PortId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("port_id");
 
                 entity.Property(e => e.AccurateAddress).HasColumnName("accurate_address");
 
@@ -441,7 +470,9 @@ namespace Course_project.DAL
                 entity.HasIndex(e => e.Pname, "position_pname_key")
                     .IsUnique();
 
-                entity.Property(e => e.PositionId).HasColumnName("position_id");
+                entity.Property(e => e.PositionId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("position_id");
 
                 entity.Property(e => e.Pname)
                     .IsRequired()
@@ -461,7 +492,9 @@ namespace Course_project.DAL
 
                 entity.ToTable("price_log");
 
-                entity.Property(e => e.LogId).HasColumnName("log_id");
+                entity.Property(e => e.LogId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("log_id");
 
                 entity.Property(e => e.Deadline)
                     .HasColumnType("date")
@@ -474,6 +507,8 @@ namespace Course_project.DAL
                 entity.Property(e => e.Price).HasColumnName("price");
 
                 entity.Property(e => e.Quality).HasColumnName("quality");
+
+                entity.Property(e => e.Tproduct).HasColumnName("tproduct");
 
                 entity.HasOne(d => d.Port)
                     .WithMany(p => p.PriceLogs)
@@ -558,7 +593,9 @@ namespace Course_project.DAL
             {
                 entity.ToTable("waybill");
 
-                entity.Property(e => e.WaybillId).HasColumnName("waybill_id");
+                entity.Property(e => e.WaybillId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("waybill_id");
 
                 entity.Property(e => e.AddressId).HasColumnName("address_id");
 
@@ -569,6 +606,10 @@ namespace Course_project.DAL
                 entity.Property(e => e.StartDate)
                     .HasColumnType("date")
                     .HasColumnName("start_date");
+
+                entity.Property(e => e.Status)
+                  .HasColumnName("status")
+                  .HasDefaultValueSql("1");
 
                 entity.HasOne(d => d.Address)
                     .WithMany(p => p.Waybills)
@@ -582,7 +623,9 @@ namespace Course_project.DAL
                 entity.HasIndex(e => e.PhoneNumber, "staff_phone_number_key")
                     .IsUnique();
 
-                entity.Property(e => e.StaffId).HasColumnName("staff_id");
+                entity.Property(e => e.StaffId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("staff_id");
 
                 entity.Property(e => e.DateOfBirth)
                     .HasColumnType("date")
@@ -607,6 +650,8 @@ namespace Course_project.DAL
                     .HasMaxLength(30)
                     .HasColumnName("second_name")
                     .IsFixedLength(true);
+
+                entity.Property(e => e.Sex).HasColumnName("sex");
 
                 entity.HasOne(d => d.Position)
                     .WithMany(p => p.staff)

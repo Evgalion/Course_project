@@ -9,43 +9,14 @@ using System.Threading.Tasks;
 
 namespace Course_project.DAL.Repositories
 {
-    public class CarRepository :  ICarRepository
+    public class CarRepository : BaseRepository<Car>, ICarRepository
     {
         private readonly Transport_DBContext _DBContext;
 
-        public CarRepository(Transport_DBContext dBContext)
+        public CarRepository(Transport_DBContext dBContext) : base(dBContext)
         {
-            _DBContext = dBContext;
-        }
-        public async Task<bool> Create(Car entity)
-        {
-            await _DBContext.AddAsync(entity);
-            await _DBContext.SaveChangesAsync();
-            return true;
-        }
 
-        public async Task<bool> Delete(Car entity)
-        {
-            _DBContext.Remove(entity);
-            await _DBContext.SaveChangesAsync();
-            return true;
         }
-
-        public async Task<Car> Get(int id)
-        {
-            return await _DBContext.Cars.FirstOrDefaultAsync(x => x.CarId == id);
-        }
-
-        public async Task<List<Car>> Select()
-        {
-            return await _DBContext.Cars.ToListAsync();
-        }
-
-        public async Task<Car> Update(Car entity)
-        {
-            _DBContext.Update(entity);
-            await _DBContext.SaveChangesAsync();
-            return entity;
-        }
+      
     }
 }

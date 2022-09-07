@@ -9,6 +9,5 @@ namespace Course_project.DAL.Interfaces
 {
     public interface IAddressRepository : IBaseRepository<Address>
     {
-        Task<Address> GetByName(string name);
     }
 }

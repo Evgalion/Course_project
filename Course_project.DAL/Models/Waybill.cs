@@ -1,4 +1,5 @@
-﻿using Course_project.Domain.Models;
+﻿using Course_project.Domain.Enum;
+using Course_project.Domain.Models;
 using System;
 using System.Collections.Generic;
 
@@ -19,6 +20,7 @@ namespace Course_project.Domain.Models
         public int AddressId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
+        public StatusOfWaybill Status { get; set; }
 
         public virtual Address Address { get; set; }
         public virtual ICollection<WC> WCs { get; set; }

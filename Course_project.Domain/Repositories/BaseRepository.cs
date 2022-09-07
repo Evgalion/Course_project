@@ -22,17 +22,31 @@ namespace Course_project.DAL.Repositories
             _DBContext = dBContext;
         }
 
-        public async Task<bool> Create(T entity)
+        public async Task<bool> Add(T entity)
         {
-
             await _DBContext.AddAsync(entity);
             await _DBContext.SaveChangesAsync();
             return true;
         }
 
-        public Task<bool> Delete(T entity)
+        public async Task<bool> AddRange(IEnumerable<T> entities)
         {
-            throw new NotImplementedException();
+            await _DBContext.AddRangeAsync(entities);
+            await _DBContext.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> Remove(T entity)
+        {
+            _DBContext.Remove(entity);
+            await _DBContext.SaveChangesAsync();
+            return true;
+        }
+        public async Task<bool> RemoveRange(T entity)
+        {
+            _DBContext.Remove(entity);
+            await _DBContext.SaveChangesAsync();
+            return true;
         }
 
         //Finds a set of record that matches the passed expression.
@@ -41,19 +55,20 @@ namespace Course_project.DAL.Repositories
             return _DBContext.Set<T>().Where(expression);
         }
 
-        public Task<T> Get(int id)
+        public async Task<T> Get(int id)
         {
-            throw new NotImplementedException();
+            return await _DBContext.Set<T>().FirstOrDefaultAsync();
         }
 
-        public Task<List<T>> GetAll()
+        public async Task<List<T>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _DBContext.Set<T>().ToListAsync();
         }
-
-        public Task<T> Update(T entity)
+        public async Task<T> Update(T entity)
         {
-            throw new NotImplementedException();
+            _DBContext.Update(entity);
+            await _DBContext.SaveChangesAsync();
+            return entity;
         }
     }
 }

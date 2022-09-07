@@ -1,0 +1,12 @@
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\bin\Debug\net5.0\Course_project.Helper.deps.json
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\bin\Debug\net5.0\Course_project.Helper.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\bin\Debug\net5.0\Course_project.Helper.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\obj\Debug\net5.0\Course_project.Helper.csproj.AssemblyReference.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\obj\Debug\net5.0\Course_project.Helper.GeneratedMSBuildEditorConfig.editorconfig
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\obj\Debug\net5.0\Course_project.Helper.AssemblyInfoInputs.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\obj\Debug\net5.0\Course_project.Helper.AssemblyInfo.cs
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\obj\Debug\net5.0\Course_project.Helper.csproj.CoreCompileInputs.cache
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\obj\Debug\net5.0\Course_project.Helper.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\obj\Debug\net5.0\refint\Course_project.Helper.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\obj\Debug\net5.0\Course_project.Helper.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project.Helper\obj\Debug\net5.0\ref\Course_project.Helper.dll

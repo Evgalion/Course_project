@@ -828,3 +828,7 @@ G:\Учёба\3 курс - 2 семестр\Проектирование_инф�
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.Service.dll
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.Service.pdb
 G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Razor\Views\Address\GetAddress.cshtml.g.cs
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Course_project.MvcApplicationPartsAssemblyInfo.cs
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.Helper.dll
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\bin\Debug\net5.0\Course_project.Helper.pdb
+G:\Учёба\3 курс - 2 семестр\Проектирование_информ_систем\Практика\Course_project\Course_project\obj\Debug\net5.0\Razor\Views\Car\GetCars.cshtml.g.cs

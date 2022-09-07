@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Course_project.Domain.Enum;
+using System;
 using System.Collections.Generic;
 
 #nullable disable
@@ -18,6 +19,8 @@ namespace Course_project.Domain.Models
         public int TotalWeight { get; set; }
         public int OwnPrice { get; set; }
         public int StaffId { get; set; }
+
+        public StatusOfContract Status {get;set;}
 
         public virtual PriceLog Log { get; set; }
         public virtual staff Staff { get; set; }
